@@ -1,18 +1,43 @@
-import React from "react";
+'use client';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
-export default function Navbar() {
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow z-50">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-600 dark:text-blue-400">Vinicius</h1>
-        <ul className="flex gap-6 text-sm font-medium text-gray-700 dark:text-gray-200">
-          <li><a href="#inicio" className="hover:text-blue-600">Início</a></li>
-          <li><a href="#perfil" className="hover:text-blue-600">Perfil</a></li>
-          <li><a href="#projetos" className="hover:text-blue-600">Projetos</a></li>
-          <li><a href="#ferramentas" className="hover:text-blue-600">Ferramentas</a></li>
-          <li><a href="#contato" className="hover:text-blue-600">Contato</a></li>
-        </ul>
-      </nav>
+    <header className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-bold">Vinicius Santos</h1>
+
+        {/* Botão de menu no mobile */}
+        <button onClick={toggleMenu} className="md:hidden">
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+
+        {/* Menu desktop */}
+        <nav className="hidden md:flex space-x-6">
+          <a href="#inicio" className="hover:text-yellow-400">Início</a>
+          <a href="#perfil" className="hover:text-yellow-400">Perfil</a>
+          <a href="#ferramentas" className="hover:text-yellow-400">Ferramentas</a>
+          <a href="#projetos" className="hover:text-yellow-400">Projetos</a>
+          <a href="#contato" className="hover:text-yellow-400">Contato</a>
+        </nav>
+      </div>
+
+      {/* Menu mobile dropdown */}
+      {menuOpen && (
+        <div className="md:hidden bg-gray-800 px-4 pb-4 flex flex-col space-y-2">
+          <a href="#inicio" onClick={closeMenu} className="hover:text-yellow-400">Início</a>
+          <a href="#perfil" onClick={closeMenu} className="hover:text-yellow-400">Perfil</a>
+          <a href="#ferramentas" onClick={closeMenu} className="hover:text-yellow-400">Ferramentas</a>
+          <a href="#projetos" onClick={closeMenu} className="hover:text-yellow-400">Projetos</a>
+          <a href="#contato" onClick={closeMenu} className="hover:text-yellow-400">Contato</a>
+        </div>
+      )}
     </header>
   );
 }
