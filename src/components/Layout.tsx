@@ -8,7 +8,7 @@ type LayoutProps = {
 
 export default function Layout({ children, title }: LayoutProps) {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <div className="bg-gray-700 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       {/* Navbar fixa */}
       <Navbar />
 

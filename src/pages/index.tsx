@@ -9,10 +9,8 @@ import Tools from "@/src/sections/tools";
 export default function Home() {
   return (
     <Layout title="Home | Meu Portfólio">
-      
-      <section id="inicio" className="scroll-mt-20 py-24 bg-white dark:bg-gray-900 text-center">
-       <Inicio />
-      </section>
+
+      <Inicio />
 
       <section id="perfil" className="scroll-mt-20 py-24 bg-gray-100 dark:bg-gray-800">
         <Profile />
@@ -31,7 +29,7 @@ export default function Home() {
       </section>
 
       <Footer />
-      
+
     </Layout>
   );
 }
