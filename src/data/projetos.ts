@@ -41,7 +41,20 @@ export const projetos: Projeto[] = [
       "/images/loja-virtual/admin.png"
     ],
     projectUrl: "https://github.com/vinisantos2/loja-virtual"
+  },
+
+  {
+    title: "Serviço-On com React Native e Firebase",
+    description: "Aplicativo mobile para conexão entre prestadores de serviço e clientes. Possui autenticação com Firebase, cadastro e listagem de parceiros, avaliações com estrelas, e armazenamento de dados no Firestore. Desenvolvido com React Native (Expo), Firebase Authentication e Firestore, utilizando TypeScript e uma estrutura modular.",
+    imagesUrl: [
+      "/images/servico-on/login.png",
+      "/images/servico-on/lista-servicos.png",
+      "/images/servico-on/perfil-parceiro.png",
+      "/images/servico-on/servico-parceiro.png"
+    ],
+    projectUrl: "https://github.com/vinisantos2/servico-on"
   }
+
 
 
 ];
