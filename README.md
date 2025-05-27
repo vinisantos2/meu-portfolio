@@ -38,3 +38,7 @@ Este é o meu portfólio pessoal, criado para apresentar minhas habilidades, pro
    ```bash
    git clone https://github.com/seu-usuario/seu-repo.git
    cd seu-repo
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
