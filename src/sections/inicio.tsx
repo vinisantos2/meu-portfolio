@@ -5,7 +5,7 @@ export default function Inicio() {
             className="relative min-h-screen bg-[url('/images/perfil/react.jpg')] bg-cover bg-center bg-no-repeat text-center flex items-center justify-center"
         >
             {/* Overlay escuro para contraste */}
-            <div className="absolute inset-0 font bg-black bg-opacity-50"></div>
+            <div className="absolute inset-0 font bg-black opacity-60"></div>
 
             {/* Conteúdo centralizado sobre o overlay */}
             <div className="relative z-10 px-4">

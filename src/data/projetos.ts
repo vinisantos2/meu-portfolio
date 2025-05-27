@@ -53,7 +53,18 @@ export const projetos: Projeto[] = [
       "/images/servico-on/servico-parceiro.png"
     ],
     projectUrl: "https://github.com/vinisantos2/servico-on"
+  },
+
+  {
+    title: "Site Institucional para Construtora de Engenharia Civil",
+    description: "Website moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
+    imagesUrl: [
+      "/images/web-site-engenharia/home.png",
+      "/images/web-site-engenharia/projetos.png",
+    ],
+    projectUrl: "https://github.com/vinisantos2/web-site-engenharia"
   }
+
 
 
 
