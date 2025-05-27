@@ -2,7 +2,18 @@ import { Projeto } from "../types/Projeto";
 
 
 export const projetos: Projeto[] = [
+
   {
+    title: "Site Institucional para Construtora de Engenharia Civil",
+    description: "Website moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
+    imagesUrl: [
+      "/images/web-site-engenharia/home.png",
+      "/images/web-site-engenharia/projetos.png",
+    ],
+    projectUrl: "https://github.com/vinisantos2/web-site-engenharia"
+  },
+  {
+
     title: "Pongada",
     description: "Jogo de tabuleiro 3x3 feito com React Native e TypeScript. Possui animações e modo multijogador.",
     imagesUrl: ["/images/pongada/tela-home.png", "/images/pongada/tela-jogo-2-pessoas.png", "/images/pongada/tela-jogo-ia.png"],
@@ -16,15 +27,7 @@ export const projetos: Projeto[] = [
     projectUrl: "https://github.com/vinisantos2/loteria-react-native"
   },
 
-  {
-    title: "Magalu clone",
-    description: "Aplicativo de vitrine de produtos inspirado no Magazine Luiza. Desenvolvido com React Native e Expo, exibe imagem, nome, preço e botão de compra com layout limpo e responsivo.",
-    imagesUrl: [
-      "/images/magalu-clone/home.png",
-      "/images/magalu-clone/produto.png"
-    ],
-    projectUrl: "https://github.com/vinisantos2/magaluClone"
-  },
+
   {
     title: "Calculador IOS clone",
     description: "App de calculadora inspirado no visual do iOS. Desenvolvido com React Native e Expo, possui interface limpa e funcional para realizar operações básicas com uma experiência fluida.",
@@ -55,17 +58,16 @@ export const projetos: Projeto[] = [
     projectUrl: "https://github.com/vinisantos2/servico-on"
   },
 
+
   {
-    title: "Site Institucional para Construtora de Engenharia Civil",
-    description: "Website moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
+    title: "Magalu clone",
+    description: "Aplicativo de vitrine de produtos inspirado no Magazine Luiza. Desenvolvido com React Native e Expo, exibe imagem, nome, preço e botão de compra com layout limpo e responsivo.",
     imagesUrl: [
-      "/images/web-site-engenharia/home.png",
-      "/images/web-site-engenharia/projetos.png",
+      "/images/magalu-clone/home.png",
+      "/images/magalu-clone/produto.png"
     ],
-    projectUrl: "https://github.com/vinisantos2/web-site-engenharia"
-  }
-
-
+    projectUrl: "https://github.com/vinisantos2/magaluClone"
+  },
 
 
 ];
