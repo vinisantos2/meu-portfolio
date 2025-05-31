@@ -1,4 +1,5 @@
 'use client';
+
 import ProjetoCard from '@/src/components/ProjetoCard';
 import { projetos } from '@/src/data/projetos';
 import { motion } from 'framer-motion';
@@ -6,30 +7,30 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Projects() {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-2">
+    <section id="projetos" className="bg-emerald-50 dark:bg-gray-900 py-16 px-6 mt-20">
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
           Meus Projetos
         </h2>
-        <div className="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
-        <p className="text-gray-500 dark:text-gray-300 mt-4">
+        <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full" />
+        <p className="text-gray-600 dark:text-gray-300 mt-4 text-lg">
           Veja alguns dos trabalhos que desenvolvi com dedicação.
         </p>
       </div>
 
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2}}
-        transition={{ staggerChildren: 0.15 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ staggerChildren: 0.2 }}
       >
         {projetos.slice(0, 6).map((projeto) => (
           <motion.div
             key={projeto.title}
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
           >
             <ProjetoCard imageUrls={projeto.imagesUrl} {...projeto} />
           </motion.div>
@@ -37,10 +38,10 @@ export default function Projects() {
       </motion.div>
 
       {projetos.length > 6 && (
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-14">
           <a
             href="/pageProjects"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-all"
           >
             Ver mais projetos
             <ArrowRight size={18} />

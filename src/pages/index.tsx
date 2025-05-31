@@ -6,37 +6,22 @@ import Profile from "@/src/sections/profile";
 import Projects from "@/src/sections/projects";
 import Tools from "@/src/sections/tools";
 import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <Layout title="Home | Meu Portfólio">
-      <Head>
-        <title>Meu portifolio</title>
-        <meta
-          name="description"
-          content="Protifólio dos meus projetos."
-        />
-      </Head>
+    <>
+      <Header />
       <Inicio />
+      <Profile />
+      <Tools />
+      <Projects />
 
-      <section id="perfil" className="scroll-mt-20 py-24 bg-gray-100 dark:bg-gray-800">
-        <Profile />
-      </section>
+      <Contact />
+    </>
 
-      <section id="projetos" className="scroll-mt-20 py-24 bg-indigo-100 dark:bg-indigo-900">
-        <Projects />
-      </section>
 
-      <section id="ferramentas" className="scroll-mt-20 py-24 bg-green-100 dark:bg-green-900">
-        <Tools />
-      </section>
 
-      <section id="contato" className="scroll-mt-20 py-24 bg-sky-100 dark:bg-sky-900">
-        <Contact />
-      </section>
 
-      <Footer />
-
-    </Layout>
   );
 }

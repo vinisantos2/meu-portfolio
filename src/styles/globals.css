@@ -4,7 +4,7 @@
 
 
 :root {
-  --background: #efe0e0;
+  --background: #c1c1c1;
   --foreground: #171717;
   --font-sans: 'Arial', sans-serif;
   --font-mono: 'Courier New', monospace;
@@ -25,15 +25,11 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
-}
-
-html,
-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.fontAnton{
+.fontAnton {
   font-family: 'Anton';
 }
