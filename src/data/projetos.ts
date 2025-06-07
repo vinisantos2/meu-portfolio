@@ -4,6 +4,16 @@ import { Projeto } from "../types/Projeto";
 export const projetos: Projeto[] = [
 
   {
+    title: "VS Web Notas",
+    description: "Sistema web para emissão, controle e gerenciamento de notas fiscais para serviços freelancer. Desenvolvido com Next.js, Tailwind CSS e Firebase, permite cadastro de clientes, serviços e notas fiscais com interface moderna, responsiva e fácil de usar.",
+    imagesUrl: [
+      "/images/vs-web-notas/dashboard.png",
+      "/images/vs-web-notas/notas.png"
+    ],
+    projectUrl: "https://github.com/vinisantos2/vs-web-notas"
+  },
+
+  {
     title: "Site Institucional para Construtora de Engenharia Civil",
     description: "Website moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
     imagesUrl: [
