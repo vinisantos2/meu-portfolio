@@ -1,6 +1,6 @@
 export default function Profile() {
   return (
-    <section id="perfil" className="bg-emerald-50 py-16 px-6 mt-20">
+    <section id="perfil" className="bg-emerald-50 py-16 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* FOTO */}
         <div className="flex-shrink-0">

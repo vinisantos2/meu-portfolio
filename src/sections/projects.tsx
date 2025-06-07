@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Projects() {
   return (
-    <section id="projetos" className="bg-emerald-50 dark:bg-gray-900 py-16 px-6 mt-20">
+    <section id="projetos" className="bg-emerald-50 dark:bg-gray-900 py-16 px-6">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
           Meus Projetos

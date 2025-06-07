@@ -16,7 +16,7 @@ export default function Tools() {
   return (
     <section
       id="ferramentas"
-      className="bg-white dark:bg-gray-900 py-16 px-6 mt-20"
+      className="bg-white dark:bg-gray-900 py-16 px-6"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-12">
