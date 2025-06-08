@@ -4,7 +4,7 @@ import Profile from "@/src/sections/profile";
 import Projects from "@/src/sections/projects";
 import Tools from "@/src/sections/tools";
 import Header from "../components/Header";
-import SecaoServicos from "./servicos";
+import SecaoServicos from "../sections/servicos";
 
 export default function Home() {
   return (
