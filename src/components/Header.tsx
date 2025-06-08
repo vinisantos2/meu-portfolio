@@ -7,9 +7,9 @@ import img from '@/public/images/perfil/logo.png';
 const menuItems = [
   { title: 'Início', url: '#inicio' },
   { title: 'Perfil', url: '#perfil' },
-  { title: 'Ferramentas', url: '#ferramentas' },
-  { title: 'Projetos', url: '#projetos' },
   { title: 'Serviços', url: '#servicos' },
+  { title: 'Projetos', url: '#projetos' },
+  { title: 'Ferramentas', url: '#ferramentas' },
   { title: 'Contato', url: '#contato' },
 ];
 
