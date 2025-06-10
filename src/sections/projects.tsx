@@ -32,7 +32,7 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            <ProjetoCard imageUrls={projeto.imagesUrl} {...projeto} />
+            <ProjetoCard  {...projeto} />
           </motion.div>
         ))}
       </motion.div>
