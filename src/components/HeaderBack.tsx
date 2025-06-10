@@ -1,26 +1,38 @@
 'use client'
 
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import img from '@/public/images/perfil/logo.png'
 import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
 
 export default function HeaderBack() {
   const router = useRouter()
 
   return (
-    <header className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
-      <a
-        href='/'
-        className="hover:text-blue-700 transition-colors"
-      >
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <ArrowLeft size={24} />
-            <span className="text-2xl font-bold tracking-wide">
-              Vinicius Santos
-            </span>
-          </div>
-        </div>
-      </a>
+    <header className="bg-white text-gray-900 shadow-md sticky top-0 z-50">
+      <div className="max-w-screen-lg mx-auto px-4 py-3 flex items-center space-x-4">
+        {/* Botão de voltar */}
+        <button
+          onClick={() => router.push('/')}
+          className="text-gray-700 hover:text-gray-900 transition-colors"
+        >
+          <ArrowLeft className="w-6 h-6" />
+        </button>
+
+        {/* Logo e nome */}
+        <Link href="/" className="flex items-center space-x-2 cursor-pointer">
+          <Image
+            src={img}
+            alt="Logo VS Web & Apps"
+            width={40}
+            height={40}
+            priority
+            className="w-auto h-10"
+          />
+          <span className="text-xl font-semibold hidden sm:inline">VS Web & Apps</span>
+        </Link>
+      </div>
     </header>
   )
 }

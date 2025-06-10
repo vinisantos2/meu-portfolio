@@ -10,7 +10,8 @@ export const projetos: Projeto[] = [
       "/images/vs-web-notas/dashboard.png",
       "/images/vs-web-notas/notas.png"
     ],
-    projectUrl: "https://github.com/vinisantos2/vs-web-notas"
+    gitUrl: "https://github.com/vinisantos2/vs-web-notas",
+    siteUrl: "https://vs-web-notas.vercel.app/"
   },
 
   {
@@ -20,21 +21,22 @@ export const projetos: Projeto[] = [
       "/images/web-site-engenharia/home.png",
       "/images/web-site-engenharia/projetos.png",
     ],
-    projectUrl: "https://github.com/vinisantos2/web-site-engenharia"
+    gitUrl: "https://github.com/vinisantos2/web-site-engenharia",
+    siteUrl: "https://web-site-engenharia.vercel.app/"
   },
   {
 
     title: "Pongada",
     description: "Jogo de tabuleiro 3x3 feito com React Native e TypeScript. Possui animações e modo multijogador.",
     imagesUrl: ["/images/pongada/tela-home.png", "/images/pongada/tela-jogo-2-pessoas.png", "/images/pongada/tela-jogo-ia.png"],
-    projectUrl: "https://github.com/vinisantos2/pongada"
+    gitUrl: "https://github.com/vinisantos2/pongada"
   },
 
   {
     title: "Loteria resultados",
     description: "Aplicativo para consultar resultados de loterias e para comparar um jogo com os ja sorteados",
     imagesUrl: ["/images/loteria-resultados/resultados.png", "/images/loteria-resultados/comparar.png", "/images/loteria-resultados/estatisticas.png"],
-    projectUrl: "https://github.com/vinisantos2/loteria-react-native"
+    gitUrl: "https://github.com/vinisantos2/loteria-react-native"
   },
 
 
@@ -42,8 +44,20 @@ export const projetos: Projeto[] = [
     title: "Calculador IOS clone",
     description: "App de calculadora inspirado no visual do iOS. Desenvolvido com React Native e Expo, possui interface limpa e funcional para realizar operações básicas com uma experiência fluida.",
     imagesUrl: ["/images/calculadora/calculadora.png"],
-    projectUrl: "https://github.com/vinisantos2/calculadoraIOS"
+    gitUrl: "https://github.com/vinisantos2/calculadoraIOS"
   },
+
+  {
+    title: "Website Advocacia",
+    description: "Site institucional moderno e responsivo desenvolvido com Next.js para um escritório de advocacia. Inclui seções como áreas de atuação, sobre, contato e design profissional com foco em credibilidade.",
+    imagesUrl: [
+      "/images/website-advocacia/home.png",
+      "/images/website-advocacia/section.png"
+    ],
+    gitUrl: "https://github.com/vinisantos2/web-site-advocacia",
+    siteUrl: "https://vercel.com/vinisantos2s-projects/web-site-advocacia"
+  },
+
   {
     title: "Loja Virtual com Next.js e Firebase",
     description: "Projeto de e-commerce com autenticação, listagem de produtos em tempo real via Firebase, carrinho de compras com Context API e checkout. Desenvolvido com Next.js (App Router), Firestore e Tailwind CSS, utilizando TypeScript e estrutura modular.",
@@ -53,7 +67,7 @@ export const projetos: Projeto[] = [
       "/images/loja-virtual/detalhes.png",
       "/images/loja-virtual/admin.png"
     ],
-    projectUrl: "https://github.com/vinisantos2/loja-virtual"
+    gitUrl: "https://github.com/vinisantos2/loja-virtual"
   },
 
   {
@@ -65,7 +79,7 @@ export const projetos: Projeto[] = [
       "/images/servico-on/perfil-parceiro.png",
       "/images/servico-on/servico-parceiro.png"
     ],
-    projectUrl: "https://github.com/vinisantos2/servico-on"
+    gitUrl: "https://github.com/vinisantos2/servico-on"
   },
 
 
@@ -76,8 +90,10 @@ export const projetos: Projeto[] = [
       "/images/magalu-clone/home.png",
       "/images/magalu-clone/produto.png"
     ],
-    projectUrl: "https://github.com/vinisantos2/magaluClone"
+    gitUrl: "https://github.com/vinisantos2/magaluClone"
   },
+
+
 
 
 ];

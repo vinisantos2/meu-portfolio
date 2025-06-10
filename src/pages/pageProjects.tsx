@@ -3,6 +3,7 @@ import ProjetoCard from '@/src/components/ProjetoCard';
 import { projetos } from '@/src/data/projetos';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
+import HeaderBack from '../components/HeaderBack';
 
 export default function PageProjects() {
 
@@ -11,24 +12,7 @@ export default function PageProjects() {
 
     return (
         <>
-            <div className="bg-gray-900 w-full h-20 flex items-center sticky top-0 z-50">
-                <button
-                    onClick={() => router.back()}
-                    className="ml-4 flex items-center gap-2 text-gray-200 hover:text-white transition-colors duration-150"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                    </svg>
-                    <span className="text-sm">Voltar</span>
-                </button>
-            </div>
+            <HeaderBack />
 
             <section className="max-w-7xl mx-auto px-4 py-16">
                 <div className="text-center mb-12">
@@ -55,7 +39,7 @@ export default function PageProjects() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
                         >
-                            <ProjetoCard imageUrls={projeto.imagesUrl} {...projeto} />
+                            <ProjetoCard  {...projeto} />
                         </motion.div>
                     ))}
                 </motion.div>
