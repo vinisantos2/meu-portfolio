@@ -16,7 +16,7 @@ export const projetos: Projeto[] = [
 
   {
     title: "Site Institucional para Construtora de Engenharia Civil",
-    description: "Website moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
+    description: "Web-site moderno e responsivo desenvolvido com Next.js para apresentar os serviços, projetos realizados e informações de contato de uma construtora de engenharia civil. Inclui seções como sobre a empresa, serviços, portfólio de obras, formulário de contato e rodapé com redes sociais. Projeto criado com foco em performance, SEO e boa experiência do usuário.",
     imagesUrl: [
       "/images/web-site-engenharia/home.png",
       "/images/web-site-engenharia/projetos.png",
@@ -48,11 +48,22 @@ export const projetos: Projeto[] = [
   },
 
   {
-    title: "Website Advocacia",
+    title: "Web site Restaurante",
+    description: "Site moderno e responsivo desenvolvido com Next.js para um restaurante. Possui seções como cardápio dinâmico, painel administrativo para gerenciar pratos e um layout atrativo para atrair clientes e facilitar pedidos.",
+    imagesUrl: [
+      "/images/web-site-restaurante/home.png",
+      "/images/web-site-restaurante/admin.png",
+      "/images/web-site-restaurante/cardapio.png",
+    ],
+    gitUrl: "https://github.com/vinisantos2/web-site-restaurante",
+    siteUrl: "https://web-site-restaurante.vercel.app/"
+  },
+  {
+    title: "Web site Advocacia",
     description: "Site institucional moderno e responsivo desenvolvido com Next.js para um escritório de advocacia. Inclui seções como áreas de atuação, sobre, contato e design profissional com foco em credibilidade.",
     imagesUrl: [
-      "/images/website-advocacia/home.png",
-      "/images/website-advocacia/section.png"
+      "/images/web-site-advocacia/home.png",
+      "/images/web-site-advocacia/section.png"
     ],
     gitUrl: "https://github.com/vinisantos2/web-site-advocacia",
     siteUrl: "https://vercel.com/vinisantos2s-projects/web-site-advocacia"
