@@ -5,6 +5,7 @@ import Projects from "@/src/sections/projects";
 import Tools from "@/src/sections/tools";
 import Header from "../components/Header";
 import SecaoServicos from "../sections/servicos";
+import ChatBox from "../components/ChatBox";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Tools />
       <Contact />
+      {/* <ChatBox /> */}
     </>
 
 
