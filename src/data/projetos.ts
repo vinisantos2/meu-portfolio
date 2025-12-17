@@ -14,6 +14,20 @@ export const projetos: Projeto[] = [
   },
 
   {
+    title: "VS-Tech Afiliados",
+    description:
+      "Plataforma web de comparação e recomendação de produtos de tecnologia, focada em ajudar usuários a tomar decisões de compra mais inteligentes. O sistema organiza rankings, avaliações, cupons e análises detalhadas de produtos como smartphones, notebooks, fones de ouvido e outros dispositivos, direcionando para lojas parceiras através de links de afiliados. Desenvolvido com Next.js, TypeScript e Firebase, o projeto conta com painel administrativo próprio para gerenciamento de produtos, categorias e conteúdos.",
+    imagesUrl: [
+      "/images/vs-tech-afiliados/home.png",
+      "/images/vs-tech-afiliados/topicos.png",
+      "/images/vs-tech-afiliados/anuncio.png",
+      "/images/vs-tech-afiliados/admin.png",
+    ],
+    gitUrl: "https://github.com/vinisantos2/vs-tech-afiliados",
+    siteUrl: "https://vstechdigital.com.br",
+  },
+
+  {
     title: "Loja Virtual com Next.js e Firebase",
     description:
       "Projeto de e-commerce com autenticação, listagem de produtos em tempo real via Firebase, carrinho de compras com Context API e checkout. Desenvolvido com Next.js (App Router), Firestore e Tailwind CSS, utilizando TypeScript e estrutura modular.",
