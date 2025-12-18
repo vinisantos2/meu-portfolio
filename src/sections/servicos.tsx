@@ -5,7 +5,7 @@ export default function SecaoServicos() {
   return (
     <section
       id="servicos"
-      className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-20 px-6"
+      className="bg-white dark:bg-gray-800 text-gray-900 dark:text-white py-20 px-6"
     >
       <div className="max-w-6xl mx-auto">
         {/* TÍTULO */}

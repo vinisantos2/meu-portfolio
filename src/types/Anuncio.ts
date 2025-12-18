@@ -1,4 +1,4 @@
-type Anuncio = {
+export type Anuncio = {
   id: string;
   titulo: string;
   descricao: string;
@@ -6,5 +6,11 @@ type Anuncio = {
   itens: string[];
   destaque?: boolean;
   ctaTexto?: string;
-  onClick?: () => void;
+
+  // 👇 novos campos
+  observacoes?: string[];
+  custosRecorrentes?: {
+    hospedagem?: string;
+    dominio?: string;
+  };
 };

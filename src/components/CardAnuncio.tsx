@@ -1,9 +1,10 @@
+import { Anuncio } from "../types/Anuncio";
+
 type CardAnuncioProps = {
   anuncio: Anuncio;
-  onClick?: () => void;
 };
 
-export default function CardAnuncio({ anuncio, onClick }: CardAnuncioProps) {
+export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
   const {
     titulo,
     descricao,
@@ -11,6 +12,8 @@ export default function CardAnuncio({ anuncio, onClick }: CardAnuncioProps) {
     itens,
     destaque = false,
     ctaTexto = "Entrar em contato",
+    observacoes,
+    custosRecorrentes,
   } = anuncio;
 
   return (
@@ -43,6 +46,7 @@ export default function CardAnuncio({ anuncio, onClick }: CardAnuncioProps) {
           {descricao}
         </p>
 
+        {/* Itens principais */}
         <ul className="mt-5 space-y-2 text-sm">
           {itens.map((item, index) => (
             <li key={index} className="flex items-start gap-2">
@@ -51,25 +55,50 @@ export default function CardAnuncio({ anuncio, onClick }: CardAnuncioProps) {
             </li>
           ))}
         </ul>
+
+        {/* Observações */}
+        {observacoes && (
+          <div className="mt-4 text-xs text-gray-500 dark:text-gray-400 space-y-1">
+            {observacoes.map((obs, index) => (
+              <p key={index}>• {obs}</p>
+            ))}
+          </div>
+        )}
+
+        {/* Custos recorrentes */}
+        {custosRecorrentes && (
+          <div className="mt-4 rounded-lg bg-gray-50 dark:bg-zinc-700/40 p-3">
+            <p className="text-xs font-semibold mb-1">
+              Custos recorrentes:
+            </p>
+            <ul className="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+              {custosRecorrentes.hospedagem && (
+                <li>• {custosRecorrentes.hospedagem}</li>
+              )}
+              {custosRecorrentes.dominio && (
+                <li>• {custosRecorrentes.dominio}</li>
+              )}
+            </ul>
+          </div>
+        )}
       </div>
 
       {/* Rodapé */}
       <div className="mt-6">
         <p className="text-lg font-bold">{preco}</p>
 
-        <button
-          onClick={() => {
-            window.location.hash = "#contato";
-          }}
+        <a
+          href="#contato"
           className="
-    mt-4 w-full rounded-lg py-2
-    bg-blue-600 hover:bg-blue-700
-    text-white font-medium
-    transition
-  "
+            mt-4 block w-full text-center
+            rounded-lg py-2
+            bg-blue-600 hover:bg-blue-700
+            text-white font-medium
+            transition
+          "
         >
           {ctaTexto}
-        </button>
+        </a>
       </div>
     </div>
   );
