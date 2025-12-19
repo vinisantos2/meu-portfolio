@@ -17,7 +17,9 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
   } = anuncio;
 
   return (
-    <div
+    <article
+      itemScope
+      itemType="https://schema.org/Service"
       className={`
         relative flex flex-col justify-between
         rounded-2xl p-6 shadow-md transition
@@ -40,13 +42,23 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
 
       {/* Conteúdo */}
       <div>
-        <h3 className="text-xl font-semibold">{titulo}</h3>
+        <header>
+          <h3
+            itemProp="name"
+            className="text-xl font-semibold"
+          >
+            {titulo}
+          </h3>
 
-        <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-          {descricao}
-        </p>
+          <p
+            itemProp="description"
+            className="mt-3 text-sm text-gray-600 dark:text-gray-400"
+          >
+            {descricao}
+          </p>
+        </header>
 
-        {/* Itens principais */}
+        {/* Itens do serviço */}
         <ul className="mt-5 space-y-2 text-sm">
           {itens.map((item, index) => (
             <li key={index} className="flex items-start gap-2">
@@ -84,11 +96,19 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
       </div>
 
       {/* Rodapé */}
-      <div className="mt-6">
-        <p className="text-lg font-bold">{preco}</p>
+      <footer className="mt-6">
+        <p
+          itemProp="offers"
+          itemScope
+          itemType="https://schema.org/Offer"
+          className="text-lg font-bold"
+        >
+          <span itemProp="price">{preco}</span>
+        </p>
 
         <a
           href="#contato"
+          aria-label={`Entrar em contato sobre o serviço ${titulo}`}
           className="
             mt-4 block w-full text-center
             rounded-lg py-2
@@ -99,7 +119,7 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
         >
           {ctaTexto}
         </a>
-      </div>
-    </div>
+      </footer>
+    </article>
   );
 }

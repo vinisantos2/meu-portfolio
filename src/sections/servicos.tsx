@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CardAnuncio from "../components/CardAnuncio";
 import { LISTA_ANUNCIOS } from "../data/ListaAnuncios";
 
@@ -20,9 +21,25 @@ export default function SecaoServicos() {
 
         {/* CARDS */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {LISTA_ANUNCIOS.map((anuncio) => (
+          {LISTA_ANUNCIOS.slice(0, 3).map((anuncio) => (
             <CardAnuncio key={anuncio.id} anuncio={anuncio} />
           ))}
+        </div>
+        <div className="text-center">
+          <Link
+            href="/servicos"
+            className="
+    mt-10 inline-flex items-center justify-center
+    rounded-xl px-6 py-3
+    bg-gray-900 dark:bg-white
+    text-white dark:text-gray-900
+    font-semibold
+    hover:opacity-90
+    transition
+  "
+          >
+            Ver todos os serviços
+          </Link>
         </div>
       </div>
     </section>
