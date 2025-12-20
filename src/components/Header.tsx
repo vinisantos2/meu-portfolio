@@ -7,6 +7,7 @@ import img from '@/public/images/perfil/logo.png';
 const menuItems = [
   { title: 'Início', url: '#inicio' },
   { title: 'Perfil', url: '#perfil' },
+  { title: 'Por que digital', url: '#why-digital' }, // 👈 novo item
   { title: 'Serviços', url: '#servicos' },
   { title: 'Projetos', url: '#projetos' },
   { title: 'Ferramentas', url: '#ferramentas' },
