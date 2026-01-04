@@ -1,16 +1,21 @@
 // pages/_app.tsx
 import { Analytics } from "@vercel/analytics/next";
-import Layout from "../components/Layout";
-import MetaHead from "../components/MetaHead";
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
+import MetaHead from "../components/MetaHead";
+import Layout from "../components/Layout";
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout title="Home | Meu Portfólio">
+    <>
+      {/* Head global (Google enxerga com certeza) */}
       <MetaHead />
-      <Component {...pageProps} />
+
+      <Layout title="Home | Meu Portfólio">
+        <Component {...pageProps} />
+      </Layout>
+
       <Analytics />
-    </Layout>
+    </>
   );
 }
