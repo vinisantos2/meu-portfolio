@@ -1,13 +1,17 @@
-'use client';
+"use client";
 
-import ProjetoCard from '@/src/components/ProjetoCard';
-import { projetos } from '@/src/data/projetos';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import ProjetoCard from "@/src/components/ProjetoCard";
+import { projetos } from "@/src/data/projetos";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import ButtonPadrao from "../components/ButtonPadrão";
 
 export default function Projects() {
   return (
-    <section id="projetos" className="bg-emerald-50 dark:bg-gray-900 py-16 px-6">
+    <section
+      id="projetos"
+      className="bg-emerald-50 dark:bg-gray-900 py-16 px-6"
+    >
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
           Meus Projetos
@@ -30,22 +34,18 @@ export default function Projects() {
             key={projeto.title}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <ProjetoCard  {...projeto} />
+            <ProjetoCard {...projeto} />
           </motion.div>
         ))}
       </motion.div>
 
       {projetos.length > 6 && (
         <div className="flex justify-center mt-14">
-          <a
-            href="/pageProjects"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition-all"
-          >
+          <ButtonPadrao icon={<ArrowRight size={18} />} href="/pageProjects">
             Ver mais projetos
-            <ArrowRight size={18} />
-          </a>
+          </ButtonPadrao>
         </div>
       )}
     </section>

@@ -43,10 +43,7 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
       {/* Conteúdo */}
       <div>
         <header>
-          <h3
-            itemProp="name"
-            className="text-xl font-semibold"
-          >
+          <h3 itemProp="name" className="text-xl font-semibold">
             {titulo}
           </h3>
 
@@ -80,9 +77,7 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
         {/* Custos recorrentes */}
         {custosRecorrentes && (
           <div className="mt-4 rounded-lg bg-gray-50 dark:bg-zinc-700/40 p-3">
-            <p className="text-xs font-semibold mb-1">
-              Custos recorrentes:
-            </p>
+            <p className="text-xs font-semibold mb-1">Custos recorrentes:</p>
             <ul className="text-xs text-gray-600 dark:text-gray-300 space-y-1">
               {custosRecorrentes.hospedagem && (
                 <li>• {custosRecorrentes.hospedagem}</li>

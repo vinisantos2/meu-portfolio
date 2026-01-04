@@ -1,8 +1,9 @@
+import ButtonPadrao from "../components/ButtonPadrão";
+
 export default function Profile() {
   return (
     <section id="perfil" className="bg-emerald-50 dark:bg-gray-800 py-20 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-        
         {/* FOTO */}
         <div className="flex-shrink-0">
           <img
@@ -25,15 +26,16 @@ export default function Profile() {
               <span className="font-semibold text-blue-600 dark:text-blue-400">
                 Vinicius Santos
               </span>
-              . Sou desenvolvedor web e trabalho criando sites e sistemas modernos,
-              rápidos e responsivos, focados em entregar resultado real para negócios.
+              . Sou desenvolvedor web e trabalho criando sites e sistemas
+              modernos, rápidos e responsivos, focados em entregar resultado
+              real para negócios.
             </p>
 
             <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-              Tenho experiência com <strong>React</strong>, <strong>Next.js</strong> e{" "}
-              <strong>TypeScript</strong>, desenvolvendo interfaces limpas,
-              acessíveis e fáceis de usar, sempre pensando na experiência do usuário
-              e na conversão.
+              Tenho experiência com <strong>React</strong>,{" "}
+              <strong>Next.js</strong> e <strong>TypeScript</strong>,
+              desenvolvendo interfaces limpas, acessíveis e fáceis de usar,
+              sempre pensando na experiência do usuário e na conversão.
             </p>
 
             <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
@@ -51,7 +53,8 @@ export default function Profile() {
 
             <ul className="space-y-4 text-gray-700 dark:text-gray-200 text-base">
               <li>
-                <strong>Pós-graduação</strong> — Desenvolvimento Mobile (Estácio)
+                <strong>Pós-graduação</strong> — Desenvolvimento Mobile
+                (Estácio)
               </li>
               <li>
                 <strong>Graduação</strong> — Sistemas de Informação
@@ -63,13 +66,9 @@ export default function Profile() {
           </div>
 
           {/* CTA SUAVE */}
+
           <div className="mt-10">
-            <a
-              href="#contato"
-              className="inline-block px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition"
-            >
-              Falar sobre meu projeto
-            </a>
+            <ButtonPadrao href="#contato">Falar sobre meu projeto</ButtonPadrao>
           </div>
         </div>
       </div>

@@ -1,6 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
 import CardAnuncio from "../components/CardAnuncio";
 import { LISTA_ANUNCIOS } from "../data/ListaAnuncios";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import ButtonPadrao from "../components/ButtonPadrão";
+import { ArrowRight } from "lucide-react";
 
 export default function SecaoServicos() {
   return (
@@ -19,27 +29,43 @@ export default function SecaoServicos() {
           transformar ideias em produtos reais.
         </p>
 
-        {/* CARDS */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {LISTA_ANUNCIOS.slice(0, 3).map((anuncio) => (
-            <CardAnuncio key={anuncio.id} anuncio={anuncio} />
+        {/* CARROSSEL */}
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          spaceBetween={24}
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {LISTA_ANUNCIOS.map((anuncio) => (
+            <SwiperSlide
+              className="flex flex-col h-full min-h-[520px] rounded-2xl bg-zinc-900 border border-zinc-700 p-6"
+              key={anuncio.id}
+            >
+              <CardAnuncio anuncio={anuncio} />
+            </SwiperSlide>
           ))}
-        </div>
-        <div className="text-center">
-          <Link
-            href="/servicos"
-            className="
-    mt-10 inline-flex items-center justify-center
-    rounded-xl px-6 py-3
-    bg-gray-900 dark:bg-white
-    text-white dark:text-gray-900
-    font-semibold
-    hover:opacity-90
-    transition
-  "
-          >
-            Ver todos os serviços
-          </Link>
+        </Swiper>
+
+        {/* BOTÃO */}
+
+        <div className="text-center mt-10">
+          <ButtonPadrao icon={<ArrowRight size={18} />} href="/servicos">
+            Ver mais serviços
+          </ButtonPadrao>
         </div>
       </div>
     </section>
