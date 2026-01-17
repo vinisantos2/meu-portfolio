@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {/* Head global (Google enxerga com certeza) */}
       <MetaHead />
 
-      <Layout title="Home | Meu Portfólio">
+      <Layout>
         <Component {...pageProps} />
       </Layout>
 

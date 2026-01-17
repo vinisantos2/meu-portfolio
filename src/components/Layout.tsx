@@ -2,10 +2,9 @@
 import Footer from "./Footer";
 type LayoutProps = {
   children: React.ReactNode;
-  title?: string;
 };
 
-export default function Layout({ children, title }: LayoutProps) {
+export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <main className="flex-1">{children}</main>
