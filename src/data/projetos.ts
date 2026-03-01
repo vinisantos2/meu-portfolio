@@ -14,6 +14,15 @@ export const projetos: Projeto[] = [
   },
 
   {
+    title: "Website Ita Sushi",
+    description:
+      "Website profissional desenvolvido para o restaurante Ita Sushi, com foco em apresentação do cardápio, experiência mobile e conversão de pedidos via WhatsApp. Projeto construído com Next.js, Tailwind CSS e Firebase, garantindo alta performance, design moderno e fácil atualização dos produtos.",
+    imagesUrl: ["/images/ita-sushi/home.png", "/images/ita-sushi/cardapio.png"],
+    gitUrl: "https://github.com/vinisantos2/itasushi",
+    siteUrl: "https://itasushi.vercel.app/",
+  },
+
+  {
     title: "VS-Tech Afiliados",
     description:
       "Plataforma web de comparação e recomendação de produtos de tecnologia, focada em ajudar usuários a tomar decisões de compra mais inteligentes. O sistema organiza rankings, avaliações, cupons e análises detalhadas de produtos como smartphones, notebooks, fones de ouvido e outros dispositivos, direcionando para lojas parceiras através de links de afiliados. Desenvolvido com Next.js, TypeScript e Firebase, o projeto conta com painel administrativo próprio para gerenciamento de produtos, categorias e conteúdos.",
