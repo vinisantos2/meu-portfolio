@@ -21,17 +21,18 @@ export default function CardAnuncio({ anuncio }: CardAnuncioProps) {
       itemScope
       itemType="https://schema.org/Service"
       className={`
-        relative flex flex-col justify-between
-        rounded-2xl p-6 shadow-md transition
-        bg-white dark:bg-zinc-800
-        text-gray-800 dark:text-gray-100
-        hover:shadow-xl
-        ${
-          destaque
-            ? "border-2 border-blue-600 scale-[1.02]"
-            : "border border-gray-200 dark:border-zinc-700"
-        }
-      `}
+  relative flex flex-col justify-between
+  h-full
+  rounded-2xl p-6 shadow-md transition
+  bg-white dark:bg-zinc-800
+  text-gray-800 dark:text-gray-100
+  hover:shadow-xl
+  ${
+    destaque
+      ? "border-2 border-blue-600 scale-[1.02]"
+      : "border border-gray-200 dark:border-zinc-700"
+  }
+`}
     >
       {/* Badge destaque */}
       {destaque && (

@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { LISTA_ANUNCIOS } from "../data/ListaAnuncios";
 import CardAnuncio from "../components/CardAnuncio";
@@ -53,9 +52,9 @@ export default function Servicos() {
             Todos os serviços disponíveis
           </h2>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {LISTA_ANUNCIOS.map((anuncio) => (
-              <CardAnuncio key={anuncio.id} anuncio={anuncio} />
+              <CardAnuncio key={anuncio.titulo} anuncio={anuncio} />
             ))}
           </div>
         </div>

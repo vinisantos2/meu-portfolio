@@ -37,6 +37,19 @@ export const projetos: Projeto[] = [
   },
 
   {
+    title: "Template Landing Page com Next.js",
+    description:
+      "Template moderno de landing page desenvolvido com Next.js, Tailwind CSS e TypeScript. Possui layout responsivo, modo escuro (Dark Mode), páginas de blog, contato, login e cadastro. Estrutura modular com componentes reutilizáveis, ideal para startups, SaaS e sites institucionais.",
+    imagesUrl: [
+      "/images/landing-template/home.png",
+      "/images/landing-template/blog.png",
+      "/images/landing-template/contact.png",
+      "/images/landing-template/login.png",
+    ],
+    gitUrl: "https://github.com/vinisantos2/nextjs-landing-template",
+    siteUrl:"https://nextjs-landing-template-amber.vercel.app/"
+  },
+  {
     title: "Loja Virtual com Next.js e Firebase",
     description:
       "Projeto de e-commerce com autenticação, listagem de produtos em tempo real via Firebase, carrinho de compras com Context API e checkout. Desenvolvido com Next.js (App Router), Firestore e Tailwind CSS, utilizando TypeScript e estrutura modular.",

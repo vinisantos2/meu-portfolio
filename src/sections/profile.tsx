@@ -2,25 +2,25 @@ import ButtonPadrao from "../components/ButtonPadrão";
 
 export default function Profile() {
   return (
-    <section id="perfil" className="bg-emerald-50 dark:bg-gray-800 py-20 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
-        {/* FOTO */}
-        <div className="flex-shrink-0">
-          <img
-            src="/images/perfil/vinicius.jpg"
-            alt="Vinicius Santos - Desenvolvedor Web"
-            loading="lazy"
-            className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-lg ring-4 ring-blue-500"
-          />
-        </div>
+    <section
+      id="perfil"
+      className="relative overflow-hidden py-24 px-6 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800"
+    >
+      {/* Formas decorativas */}
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-blue-500 opacity-20 blur-3xl rounded-full"></div>
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 bg-purple-500 opacity-20 blur-3xl rounded-full"></div>
 
-        {/* TEXTO */}
-        <div className="flex-1 text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-8">
-            Quem vai desenvolver seu projeto
-          </h2>
+      <div className="max-w-5xl mx-auto relative z-10">
 
-          <div className="space-y-6">
+        {/* Título */}
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
+          Quem vai desenvolver seu projeto
+        </h2>
+
+        {/* Card */}
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-3xl p-10 md:p-14">
+
+          <div className="space-y-6 text-center md:text-left">
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 leading-relaxed">
               Meu nome é{" "}
               <span className="font-semibold text-blue-600 dark:text-blue-400">
@@ -45,31 +45,34 @@ export default function Profile() {
             </p>
           </div>
 
-          {/* FORMAÇÃO (autoridade, sem exagerar) */}
-          <div className="mt-10">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          {/* Formação */}
+          <div className="mt-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
               Formação Acadêmica
             </h3>
 
-            <ul className="space-y-4 text-gray-700 dark:text-gray-200 text-base">
+            <ul className="space-y-3 text-gray-700 dark:text-gray-200 text-base">
               <li>
-                <strong>Pós-graduação</strong> — Desenvolvimento Mobile
-                (Estácio)
+                <strong>Pós-graduação</strong> — Desenvolvimento Mobile (Estácio)
               </li>
+
               <li>
                 <strong>Graduação</strong> — Sistemas de Informação
               </li>
+
               <li>
                 <strong>Curso Técnico</strong> — Análise de Sistemas (SENAI)
               </li>
             </ul>
           </div>
 
-          {/* CTA SUAVE */}
-
-          <div className="mt-10">
-            <ButtonPadrao href="#contato">Falar sobre meu projeto</ButtonPadrao>
+          {/* CTA */}
+          <div className="mt-12 flex justify-center md:justify-start">
+            <ButtonPadrao href="#contato">
+              Falar sobre meu projeto
+            </ButtonPadrao>
           </div>
+
         </div>
       </div>
     </section>
