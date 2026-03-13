@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { LISTA_ANUNCIOS } from "../data/ListaAnuncios";
 import CardAnuncio from "../components/CardAnuncio";
-import HeaderBack from "../components/HeaderBack";
 
 export const metadata = {
   title: "Serviços de Desenvolvimento Web e Aplicativos | VS Web & Apps",
@@ -12,7 +11,6 @@ export const metadata = {
 export default function Servicos() {
   return (
     <main className="bg-white dark:bg-zinc-900">
-      <HeaderBack />
       {/* HERO / INTRO */}
       <section className="py-20 px-6 bg-gray-50 dark:bg-zinc-800">
         <div className="max-w-6xl mx-auto text-center">

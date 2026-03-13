@@ -1,9 +1,7 @@
-import HeaderBack from "../components/HeaderBack";
 
 export default function Agradecimento() {
   return (
     <>
-      <HeaderBack />
       <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-900 text-center px-4">
 
         <h1 className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-4">

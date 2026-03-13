@@ -3,7 +3,6 @@ import ProjetoCard from '@/src/components/ProjetoCard';
 import { projetos } from '@/src/data/projetos';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import HeaderBack from '../components/HeaderBack';
 
 export default function PageProjects() {
 
@@ -12,7 +11,6 @@ export default function PageProjects() {
 
     return (
         <>
-            <HeaderBack />
 
             <section className="max-w-7xl mx-auto px-4 py-16">
                 <div className="text-center mb-12">
