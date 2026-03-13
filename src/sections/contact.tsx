@@ -22,7 +22,7 @@ export default function Contact() {
           {/* AÇÕES RÁPIDAS */}
           <div className="grid gap-4 md:grid-cols-2 mb-8">
             <a
-              href="https://instagram.com/vini.santos2"
+              href="https://instagram.com/vstechdigital"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 rounded-xl border border-gray-200 dark:border-gray-700 py-3 font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition"

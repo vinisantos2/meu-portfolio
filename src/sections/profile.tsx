@@ -3,7 +3,7 @@ import ButtonPadrao from "../components/ButtonPadrão";
 export default function Profile() {
   return (
     <section
-      id="perfil"
+      id="empresa"
       className="relative overflow-hidden py-24 px-6 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800"
     >
       {/* Formas decorativas */}
@@ -14,7 +14,7 @@ export default function Profile() {
 
         {/* Título */}
         <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-14">
-          Quem vai desenvolver seu projeto
+          Sobre a VS Web & Apps
         </h2>
 
         {/* Card */}
@@ -22,54 +22,45 @@ export default function Profile() {
 
           <div className="space-y-6 text-center md:text-left">
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 leading-relaxed">
-              Meu nome é{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">
-                Vinicius Santos
-              </span>
-              . Sou desenvolvedor web e trabalho criando sites e sistemas
-              modernos, rápidos e responsivos, focados em entregar resultado
-              real para negócios.
+              A <span className="font-semibold text-blue-600 dark:text-blue-400">
+                VS Web & Apps
+              </span>{" "}
+              é especializada no desenvolvimento de soluções digitais para
+              empresas que desejam crescer na internet.
             </p>
 
             <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-              Tenho experiência com <strong>React</strong>,{" "}
-              <strong>Next.js</strong> e <strong>TypeScript</strong>,
-              desenvolvendo interfaces limpas, acessíveis e fáceis de usar,
-              sempre pensando na experiência do usuário e na conversão.
+              Criamos <strong>sites profissionais</strong>,{" "}
+              <strong>sistemas web</strong> e{" "}
+              <strong>aplicativos personalizados</strong> utilizando tecnologias
+              modernas que garantem performance, segurança e escalabilidade.
             </p>
 
             <p className="text-base md:text-lg text-gray-700 dark:text-gray-200 leading-relaxed">
-              Já desenvolvi projetos próprios e sistemas completos, incluindo
-              sites institucionais, landing pages, dashboards e aplicações web
-              com autenticação e painel administrativo.
+              Nosso foco é ajudar empresas a fortalecer sua presença digital,
+              melhorar a experiência de seus clientes e automatizar processos
+              através da tecnologia.
             </p>
           </div>
 
-          {/* Formação */}
+          {/* Diferenciais */}
           <div className="mt-12">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center md:text-left">
-              Formação Acadêmica
+              Nossos diferenciais
             </h3>
 
             <ul className="space-y-3 text-gray-700 dark:text-gray-200 text-base">
-              <li>
-                <strong>Pós-graduação</strong> — Desenvolvimento Mobile (Estácio)
-              </li>
-
-              <li>
-                <strong>Graduação</strong> — Sistemas de Informação
-              </li>
-
-              <li>
-                <strong>Curso Técnico</strong> — Análise de Sistemas (SENAI)
-              </li>
+              <li>✔ Desenvolvimento moderno com tecnologias atualizadas</li>
+              <li>✔ Sites rápidos, responsivos e otimizados para SEO</li>
+              <li>✔ Sistemas personalizados para cada tipo de negócio</li>
+              <li>✔ Suporte e acompanhamento após a entrega</li>
             </ul>
           </div>
 
           {/* CTA */}
           <div className="mt-12 flex justify-center md:justify-start">
             <ButtonPadrao href="#contato">
-              Falar sobre meu projeto
+              Solicitar orçamento
             </ButtonPadrao>
           </div>
 

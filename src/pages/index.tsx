@@ -10,10 +10,8 @@ import WhyDigital from "../sections/whyDigital";
 export default function Home() {
   return (
     <>
-      <Header />
       <Inicio />
       <Profile />
-
       <WhyDigital />
 
       <SecaoServicos />

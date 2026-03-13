@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-         "spin-slow": "spin 18s linear infinite",
+         "spin-slow": "spin 18s linear infinite", 
       },
       keyframes: {
         zoomy: {
