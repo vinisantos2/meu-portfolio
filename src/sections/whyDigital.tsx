@@ -63,7 +63,7 @@ export default function WhyDigital() {
         {/* CTA */}
         <div className="mt-14">
           <a
-            href="#contact"
+            href="#contato"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition"
           >
             Quero levar meu negócio para o digital
