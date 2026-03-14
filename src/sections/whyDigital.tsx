@@ -1,9 +1,9 @@
 export default function WhyDigital() {
   return (
-    <section
-      id="why-digital"
-      className="bg-gray-50 dark:bg-gray-900 py-20 px-6"
-    >
+   <section
+  id="why-digital"
+  className="py-20 px-6 bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300"
+>
       <div className="max-w-6xl mx-auto text-center">
         {/* TÍTULO */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">

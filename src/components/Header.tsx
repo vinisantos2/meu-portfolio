@@ -51,11 +51,11 @@ export default function Header() {
           VS-Tech
         </button>
 
+        {/* menu desktop */}
         <nav className="hidden md:flex gap-8 absolute left-1/2 -translate-x-1/2">
           {menuItems.map((item) => (
             <button
               key={item.url}
-
               onClick={() => handleScroll(item.url)}
               className="hover:text-yellow-400 cursor-pointer"
             >
@@ -64,6 +64,7 @@ export default function Header() {
           ))}
         </nav>
 
+        {/* botão mobile */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden"
@@ -71,6 +72,23 @@ export default function Header() {
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+
+      {/* dropdown mobile */}
+      {menuOpen && (
+        <div className="md:hidden bg-gray-900 text-white px-4 pb-4">
+          <nav className="flex flex-col gap-4">
+            {menuItems.map((item) => (
+              <button
+                key={item.url}
+                onClick={() => handleScroll(item.url)}
+                className="text-left hover:text-yellow-400"
+              >
+                {item.title}
+              </button>
+            ))}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

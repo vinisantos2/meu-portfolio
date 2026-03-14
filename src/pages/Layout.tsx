@@ -1,6 +1,7 @@
 // components/Layout.tsx
-import Footer from "./Footer";
-import Header from "./Header";
+import { ThemeProvider } from "next-themes";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,7 +10,7 @@ type LayoutProps = {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-    <Header />
+      <Header />
       <main>{children}</main>
       <Footer />
     </>
