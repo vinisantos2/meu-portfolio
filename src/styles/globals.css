@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+section {
+  scroll-margin-top: 90px;
+}
+
 .fontAnton {
   font-family: 'Anton';
 }
